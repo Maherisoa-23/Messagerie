@@ -1,13 +1,13 @@
 from http import client
 import socket
 
-host = "192.168.1.253"
-port = 6390
+host = "192.168.1.51"
+port = 4200
 
 #Création du sock
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-socket.bind(host,port)
+socket.bind((host,port))
 socket.listen(1)
 
 #Le script s'arrête jusqu'a une connection

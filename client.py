@@ -2,13 +2,13 @@ import socket
 from urllib import request
 from wsgiref.util import request_uri
 
-host = "192.168.1.253"
-port = 6390
+host = "192.168.1.51"
+port = 4200
 
 #Création du sock
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-socket.connect(host,port)
+socket.connect((host,port))
 
 while True :
     msg = input('->')
